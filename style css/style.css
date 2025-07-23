@@ -1,7 +1,243 @@
-.inter-font {
-    font-family: "Inter", sans-serif;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+
+
+header, main{
+    max-width: 1140px;
+    margin: 50px auto;
+}
+
+.navber , .menu-cart, .menu ul, .banner-section, .trusted-seller {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navber, .banner-section{
+    align-items: center;
+}
+
+
+/* ----google fonts  and primary color---- */
 
 .noto-serif-font {
     font-family: "Noto Serif", serif;
+}
+
+.primary-color{
+    color: #E95A08;
+}
+
+
+.container-heading{
+    font-weight: bold;
+    font-size: 3.125rem;
+    font-family: "Noto Serif", serif;
+}
+
+.paragraph-design{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.375rem; 
+    font-family: "Inter", sans-serif;
+    max-width: 100%;
+}
+/* ---------------------------------------------------------------------------- */
+
+
+
+
+/* \\\\\\\\\\\\\\\\\\\\\\\\\---navber style---\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+.nav-link a , .nav-link{
+    list-style: none;
+    text-decoration: none;
+    color: #8987A1;
+}
+
+#home-link{
+    font-weight: bold;
+    color: black;
+}
+
+.menu-cart,.menu ul {
+    gap: 20px;
+}
+
+/* --------------------------------------------------------------------------- */
+
+
+
+
+/* \\\\\\\\\\\\----------design for Banner-------------\\\\\\\\\\\\\\\\\\\\ */
+
+.banner-title{
+ font-weight: bold;
+ font-size: 4.0625rem;
+ font-family: "Noto Serif", serif;
+ margin-bottom: 13px;
+}
+
+.banner-section{
+    margin-top: 130px;
+}
+
+.banner-image img{
+    display: block;
+}
+/* ---------------------------------------------------------------------------------- */
+
+
+
+/* \\\\\\\\\\\\\\\\\\-------Cards design-----\\\\\\\\\\\\\\\\\\\\ */
+
+.cards-container{
+    /* text-align: center; */
+    margin-top: 130px;
+    justify-items: center;
+    
+}
+
+.cards-container p {
+    margin: 25px 0;
+    max-width: 75%;
+    text-align: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.card{
+    max-width: 272px;
+    height: 490px;
+    justify-items: center;
+}
+
+
+.card-title{
+    font-weight: 500;
+    font-size: 1.375rem;
+    font-family: "Inter", sans-serif;
+    color: #111111;
+    margin: 10px 0;
+    
+}
+
+.price {
+    
+    font-weight: bold;
+    font-size: 1.375rem;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+}
+
+.card button {
+    background-color: #E95A08;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: 100%;
+    padding: 15px 0;   
+}
+
+/* ------------------------------------------------------------------------------- */
+
+
+
+
+/* \\\\\\\\\\\\\\\\\-----------trusted-seller design---------\\\\\\\\\\\\\\\ */
+
+
+.trusted-seller{
+    margin-top: 200px;
+    gap: 90px;
+}
+.seller-images img:nth-child(2){
+    max-width: 287px;
+    position: absolute;
+    left: 55%;
+    transform: translate(-100%, -50%);
+}
+
+.seller-images img:nth-child(1){
+    position: relative;
+   
+}
+
+.seller-feedback{
+    margin: 40px auto;
+}
+
+.seller-feedback ul li {
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+/* -----------Mobile Responsive-------------- */
+
+@media (max-width: 768px) {
+    .menu{
+        visibility: hidden;
+    }
+
+    .container{
+    margin: 10px auto;
+}
+
+    .banner-section{
+    flex-direction: column-reverse;
+    margin-top: 28px;
+    
+}
+
+.banner-content{
+    max-width: 90%;
+}
+
+header, main{
+    max-width: 700px;
+    margin: 0px auto;
+}
+
+.banner-title{
+    margin: 30px auto;
+}
+
+.banner-image img{
+    margin-right: -130px;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+    margin-top: 30px;
+}
+
+.seller-images img:nth-child(2){
+    visibility: hidden;
+}
+
+.trusted-seller{
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto;
+}
+
+.seller-feedback{
+    margin-top: -40px;
+    align-items: center;
+    max-width: 70%;
+}
 }
