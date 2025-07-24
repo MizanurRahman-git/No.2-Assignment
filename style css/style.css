@@ -6,12 +6,12 @@
 
 
 
-header, main{
+header, main, .bottom-section{
     max-width: 1140px;
     margin: 50px auto;
 }
 
-.navber , .menu-cart, .menu ul, .banner-section, .trusted-seller {
+.navber , .menu-cart, .menu ul, .banner-section, .trusted-seller, .bottom-section {
     display: flex;
     justify-content: space-between;
 }
@@ -177,10 +177,165 @@ header, main{
     margin-top: 20px;
 }
 
+/* ---------------------------------------------------------- */
+
+
+
+/* \\\\\\\\\\\\\-------Latest deals design-------\\\\\\\\\\ */
+
+
+.latest-deals{
+    margin-top: 130px;
+    justify-items: center;
+}
+
+.latest-prgh{
+    max-width: 70%;
+    margin-top: 20px;
+    
+}
+.deals{
+    margin-top: 120px;
+    display: flex;
+    gap: 20px;
+}
+.left-side{
+    max-width: 31%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bloom-plant{
+    text-align: center;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    padding: 65px 50px;
+    background-image: url(/assets/deal-bloom.png);
+}
+
+.ana-plant{
+    text-align: center;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    padding: 65px 50px;
+    background-image: url(/assets/deal-ana.png);
+}
+
+.left-side-title{
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+}
+
+.left-side-pgh{
+    
+     font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.right-side{
+    border-radius: 15px;
+    max-width: 70%;
+    padding: 130px 150px;
+    text-align: center;
+    background-image: url(/assets/deal-zabo.png);
+}
+
+.right-side-title{
+    margin-bottom: 20px;
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.right-side-pgh{
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: white;
+}
+
+/* -------------------------------------------------------------------------- */
 
 
 
 
+
+
+
+/* /////////////////----------Email option---------////////////////// */
+
+
+.email-heading{
+    padding-top: 200px;
+    color: white;
+}
+
+.email{
+    padding-bottom: 200px;
+    margin-top: 20px;
+}
+
+.email-submit{
+    margin-top: 130px;
+    text-align: center;
+    background-repeat: round;
+    background-image: url(/assets/news-letter-bg.png);
+}
+
+.email-input{
+    width: 644px;
+    height: 50px;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+.email button{
+    width: 186px;
+    height: 50px;
+    background-color: #E95A08;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+/* ------------------------------------------------------- */
+
+
+
+
+/* ///////-------footer section design-------------////////////////// */
+
+.bottom-prg{
+    max-width: 360px;
+    height: 81px;
+}
+
+.bottom-menu , .bottom-features{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bottom-features p , .bottom-menu p {
+    color: #6B7280;
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+}
+
+.bottom-icons img{
+    margin-right: 30px;
+}
+
+.bottom-icons img:nth-child(2)  {
+    margin-bottom: 5px;
+}
 
 
 /* -----------Mobile Responsive-------------- */
@@ -239,5 +394,47 @@ header, main{
     margin-top: -40px;
     align-items: center;
     max-width: 70%;
+}
+
+.deals{
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-deals{
+    text-align: center;
+}
+
+.left-side{
+    max-width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.ana-plant{
+    padding: 65px 62px;
+}
+
+
+
+.right-side{
+    max-width: 100%;
+    padding: 62px 47px;
+}
+
+.right-side-title{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.right-side-pgh{
+    
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.email-input{
+    width: 350px;
 }
 }
