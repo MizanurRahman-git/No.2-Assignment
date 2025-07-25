@@ -436,7 +436,11 @@ header, main{
 }
 
 .email-input{
-    width: 250px;
+    width: 220px;
+}
+
+.email-heading{
+    font-size: 1.5rem;
 }
 
 .bottom-section{
