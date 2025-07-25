@@ -212,7 +212,7 @@ header, main, .bottom-section{
     border-radius: 15px;
     background-repeat: no-repeat;
     padding: 65px 50px;
-    background-image: url(/assets/deal-bloom.png);
+    background-image: url(../assets/deal-bloom.png);
 }
 
 .ana-plant{
@@ -220,7 +220,7 @@ header, main, .bottom-section{
     border-radius: 15px;
     background-repeat: no-repeat;
     padding: 65px 50px;
-    background-image: url(/assets/deal-ana.png);
+    background-image: url(../assets/deal-ana.png);
 }
 
 .left-side-title{
@@ -242,7 +242,7 @@ header, main, .bottom-section{
     max-width: 70%;
     padding: 130px 150px;
     text-align: center;
-    background-image: url(/assets/deal-zabo.png);
+    background-image: url(../assets/deal-zabo.png);
 }
 
 .right-side-title{
@@ -284,7 +284,7 @@ header, main, .bottom-section{
     margin-top: 130px;
     text-align: center;
     background-repeat: round;
-    background-image: url(/assets/news-letter-bg.png);
+    background-image: url(../assets/news-letter-bg.png);
 }
 
 .email-input{
@@ -437,5 +437,14 @@ header, main{
 
 .email-input{
     width: 350px;
+}
+
+.bottom-section{
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.bottom-icons{
+    margin-top: 30px;
 }
 }
